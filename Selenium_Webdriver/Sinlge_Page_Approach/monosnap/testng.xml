@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/USER/Desktop/Adewale_AKANO_LINUX/UIAUTOMATIONTASK/Selenium_Webdriver/Sinlge_Page_Approach/monosnap/src/test/java/Login/Monosnapsignin.java">
+    <classes/>
+    </test>
+</suite>
