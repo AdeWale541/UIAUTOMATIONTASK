@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Facebooksignin {
     private WebDriver driver;
-    @BeforeClass
+     @BeforeClass
     public void setUp() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
