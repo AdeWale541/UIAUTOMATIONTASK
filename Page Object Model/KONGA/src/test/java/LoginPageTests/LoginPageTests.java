@@ -1,31 +1,35 @@
 package LoginPageTests;
 
 import BasePage.BasePage;
-import PageObject.LoginHomePage;
+import PageObject.SignedinHomePage;
 import org.testng.annotations.Test;
 
 public class LoginPageTests extends BasePage {
 
 
-
     @Test(priority = 1)
 
-    public void testLoginPageTitle() throws InterruptedException {
+    public void TestLoginPageTitle() throws InterruptedException {
+        Thread.sleep(2000);
         loginPage.clickLoginmenu();
+        Thread.sleep(2000);
         loginPage.enterUsername("testade567@gmail.com");
+        Thread.sleep(2000);
         loginPage.enterPassword("testade1234");
-        LoginHomePage loginHomePage = loginPage.clickLoginButton();
-        Thread.sleep(3000);
-        String pageTitle= "Konga";
+        Thread.sleep(2000);
+        SignedinHomePage signedinHomePage = loginPage.clickLoginButton();
+        Thread.sleep(2000);
+        String pageTitle = "Konga";
 
-        if (driver.getTitle().contains(pageTitle) ) {
+        if (loginPage.driver.getTitle().contains(pageTitle)) {
             System.out.println("The page title is " + pageTitle);
         } else {
-            System.out.println("The page title is incorrect. Actual page title is " + driver.getTitle());
-
+            System.out.println("The page title is incorrect. Actual page title is " + loginPage.driver.getTitle());
         }
+    }
 
-
-
+    @Test(priority = 1)
+    public static SignedinHomePage TestReturnSignedInHomePage(){
+        return signedinHomePage;
     }
 }

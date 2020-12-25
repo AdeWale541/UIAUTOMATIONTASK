@@ -14,8 +14,8 @@ public class setUps {
 
 
 
-    protected LoginPage loginPage;
-    protected DashboardPage dashboardPage;
+    public static LoginPage loginPage;
+    public static DashboardPage dashboardPage;
 
     private WebDriver driver;
 
